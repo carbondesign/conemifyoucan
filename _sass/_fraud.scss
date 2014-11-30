@@ -1,0 +1,81 @@
+ @mixin card($border_c, $header_c, $text_color, $bkgnd_c, $pad_l) {
+        
+        max-width: 444px;
+        border: $border_c solid 8px;
+
+        h3{
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            background-color: $header_c;
+            padding: 15px;
+            padding-left: $pad_l;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        p.fraud_desc {
+            font-size: .9em;
+            padding: 20px 20px 40px;
+            background-color: $bkgnd_c;
+            margin-bottom: 0px;
+            color: $text_color;
+            min-height: 195px;
+        }
+        a.fraud_btn {
+            position: absolute;
+            left: 50%;
+            margin-left: -90px;
+            bottom: -27px;
+            background-color: $border_c;
+            border: none;
+            text-transform: uppercase;
+            font-size: .9em;
+            padding: 10px 15px;
+            color:#fff;
+
+            -webkit-box-shadow: 1px 1px 8px 0px rgba(35,31,32, .50);
+            box-shadow: 1px 1px 8px 0px rgba(35,31,32, .50);
+
+            border-radius: 12px;
+            background-clip: padding-box;
+
+        }
+
+    
+   
+}
+#fraud-tools{
+    @extend .yellow
+}
+#fraud-tools #fraud{margin-top:15px}
+.fraud_item{
+    padding: 0 25px;
+    margin-bottom: 80px;
+
+
+    .fraud_icon {
+        position: absolute;
+        top: -30px;
+        left: 12px;
+    }
+    .fraud_card{position: relative}
+
+    #phantom.fraud_card{ 
+        @include card(#197b30, #5c9e4e,#005e20,#7cc567, 100px);
+
+    };
+    #source.fraud_card{
+        @include card(#009ba9, #64bec3,#005b7f,#7accc9, 100px)
+    };
+    #scarcity.fraud_card{
+        @include card(#662d91, #8465a5,#662d91,#a186be, 0px)
+    };
+    #social.fraud_card{
+        @include card(#ec972a, #ecae47,#c87407,#f1c65f, 110px)
+    };
+    #reciprocity.fraud_card{
+        @include card(#e96548, #f79a6b,#c04529,#f9ad81, 20px);
+        margin: 0px auto;
+    };
+}
+

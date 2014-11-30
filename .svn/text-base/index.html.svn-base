@@ -1,0 +1,136 @@
+---
+layout: default
+---
+  
+  
+    <header id="illustration">
+      <div class="container">
+        <div class="row intro">
+         
+          <div class="col-sm-12">
+            <h2>CON ’EM IS A STRATEGY GAME WHERE YOU PLAY THE CON </h2>
+            <p>Learn first-hand about the types of persuasion tactics used to perpetrate financial fraud, so that you’ll be better able to defend against them. Con your way through the town of Shady Acres, accumulating wealth and strength by using these tactics as fraud tools to exploit the vulnerabilities of unsuspecting targets. But watch out—the Fraud Fighting Agency’s lead agent, Fiona, is hot on your trail. Can you pull off the ultimate con before she finds you?</p>
+
+          </div>
+
+          
+        </div>
+      </div>
+    </header>
+    <section id="apps" class="yellow">
+      <div class="container">
+        <div class="row">
+         
+          <div id="playnow" class="col-sm-12 col-md-4 channel">
+            <a href="play.conemifyoucan.org"></a>
+            play now
+          </div>
+          <div id="googleplay" class="col-sm-12 col-md-4 channel">
+            google play
+          </div>
+          <div id="appstore" class="col-sm-12 col-md-4 channel">
+            app store
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="notsure">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 ">
+              <div class="trans_frame_cont relative">
+                <div class="trans_frame"></div>
+                <div class="bolt_l"></div>
+                <div class="bolt_r"></div>
+                <div class="trans_frame_txt relative">
+                  <h2>GET A SNEAK PEEK</h2> 
+                  <p>Watch the trailer for gameplay clips and a peek at the types of tactics you’ll need to apply to win over your targets. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="vimeo_cont ">
+              <iframe width="500" height="281" src="//www.youtube.com/embed/1r0qYZwJGVc" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="fraudtools"  class="yellow">
+        <div class="container">
+          <div class="row relative">
+            <div class="col-md-12 padding80">
+              <h2>Fraud Tools</h2>
+              <p>Persuasion tactics are a fraudster’s secret weapon to get people to “invest” their money. Watch videos from the Con Art School to see how cons use these tactics to swindle people out of their money.</p>
+
+            </div>
+            
+          </div>
+        </div>
+        <img src="images/reel.png" class="reel">
+        <button class="watchvideos center-block">Watch the Videos</button>
+    </section>
+
+    <section id="characters"  class="blue">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 padding80">
+              <h2>Meet the Characters</h2>
+              <p>In Shady Acres, you’ll come across all kinds of characters—from Connor who teaches you the way of the con, to Fiona who’s trying to throw you in jail. </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 relative character" id="connor">
+              <div class="talkbubble">
+                <p class="text-center quote">“Stick with me, kid, and you’ll be infamous.” 
+                <span class=" attribution"><br>–Connor, Con Artist and Mentor</span></p>
+              </div>
+              <div class="talkbubble_shdw"></div>
+
+              <img  src="images/connor.png">
+            </div>
+            <div class="col-md-6 relative character"  id="fiona">
+              <div class="talkbubble_r">
+                <p class="text-center quote">“I’m a top agent & I’m keeping my hawk eyes on you.” <br>
+                <span class=" attribution">–Fiona, FFA Agent</span></p>
+              </div>
+              <div class="talkbubble_shdw_r"></div>
+              <img src="images/fiona.png">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 relative character" id="catsby">
+              <div class="talkbubble">
+                <p class="text-center quote">“I didn’t get rich falling for cons. You’ll need all the fraud tools you can get to make me fall for your scheme.” <br>
+                <span class=" attribution">–Catsby, The Big Fish</span></p>
+              </div>
+              <div class="talkbubble_shdw"></div>
+              <img  src="images/catsby.png">
+            </div>
+            <div class="col-md-6 relative character">
+              <div class="target_txt">
+                <h3>Shady Acre Targets </h3>
+                <p>Shady Acres is filled with residents that have money to spare. Some want to get rich quick, some are dazzled by degrees, and others are a tough sell. But, they all have their vulnerabilities. Use the right tactics and you’ll have their cash in no time. And when you have more cash, you can buy more fraud tools from the store. </p>
+              </div>
+              <img id="targets"  src="images/targets.png">
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="whatdidyoulearn" class="yellow">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2"> 
+              <img src="images/whatdidyoulearn.png">
+
+            </div>
+            <div class="col-md-10 wdyl_txt">
+              <h2>Test your skills! </h2>
+              <p>Do you have what it takes to spot the persuasion tactics? Take what you’ve learned about how the cons operate, and turn it into the knowledge you need to spot and avoid investment fraud in the real world. </p>
+              <button class="orange_border">TAKE OUR QUIZ!</button>
+            </div>
+          </div>
+        </div>
+    </section>
+ 
+  
+

@@ -1,0 +1,131 @@
+{% if page.url == "/quiz/" %}
+   
+    	<script type="text/javascript">
+			jQuery( document ).ready(function() {
+				//$('.answer input[type=radio]').on("change", update)
+				//update();
+				// function update(){
+					
+				// 	var answer = $('.feedback > div'),
+    //     			checked = $('input:checked'),
+    //     			cardid = $(this).parent().parent().parent().parent().parent().attr('id') ;
+    //     			console.log(cardid);
+    //     			if (checked.length) {
+    //     			    var selector = checked.map(function (){
+    //     			        return '#' + cardid + ' .' + $(this).attr('class');
+    //     			    }).get().join('');
+    //     			        answer.hide();
+    //     			        answer.filter(selector).show();  
+    //     			  } else {
+    //     			    answer.show();
+    //     			}
+				//}
+				$('#quiz_submit').on("click", submitresults);
+				function submitresults(){
+
+
+					//answer key array
+					var answer_key=[
+					  	"reciprocity",
+					    "scarcity",
+					    "riches",
+					    "source",
+					    "social"
+					    
+					],
+					correct_answer = [
+						"Way to go!",
+						"Nice job!",
+						"Correct!",
+						"Looks good!",
+						"Nice work!",
+						"You know it!",
+						"Way to spot the tactic!",
+						"Great job!",
+						"That’s right!",
+						"You’re right!"
+					],
+					incorrect_answer = [
+						"Oh, no! If a salesperson is giving you a free gift, free lunch or a “special discount,” they’ll likely want you to return the favor. That’s <strong>reciprocity</strong>.",
+						"If it feels like you’re being rushed to invest because the offer is “going fast”, that’s <strong>scarcity</strong>—the idea that the deal won’t be around forever.",
+						"Not quite! Does it feel like this offer will make you rich quick, and little or no risk? Then it’s all about <strong>phantom riches</strong>, enticing you with something you want but can’t have.",
+						"Not that one! It’s easier to believe someone when they have “credentials” or special expertise. Many fraudsters pretend to be someone they’re not to take advantage of the trust that comes from <strong>source credibility</strong>. The problem is, credibility can be faked.",
+						"Try again! Fraudsters know a person is more likely to invest in something if people they know are doing it. They use <strong>social consensus</strong> to coax you into investing."
+					],
+					results_text= [
+						"You scored 100%! You’re a natural fraud fighter! Knowing all the persuasion tactics isn’t easy. Check out SaveAndInvest.org to see how you can share your expertise with others." ,
+						"You scored 80%! Great job! You almost had it. Just a little more studying, and you’ll be an expert in no time. Want to learn even more about the Red Flags of Fraud? Visit SaveAndInvest.org." ,
+						"You scored 60% Not quite there. It’s easy to mix these up. Study up on the fraud tactics and you’ll be on your way to being an expert.  And if you want to learn more about the Red Flags of Fraud, visit SaveAndInvest.org.",
+						"You scored 40%! You need a bit more work. Use the Con Art School videos as a resource to learn what you need to understand the persuasion tactics used by fraudsters. For even more help, visit SaveAndInvest.org." ,
+						"You scored 20%! You could be a good target for a fraudster. Be sure you learn the fraud tools so you can understand the persuasion tactics of fraud. For even more help, visit SaveAndInvest.org.",
+						"You scored 0%! You’re in danger of being a victim! Visit SaveAndInvest.org to learn make sure you learn the fraud tools so you can understand the persuasion tactics of fraud." 
+
+					];
+					//results_answers
+					var cards = $('#quiz-form .quiz_card'),
+					feedback = $('.feedback'),
+
+					results_answers = [],
+					num_correct = 0;
+
+					cards.each(function(){
+						var thisanswer= $(this).find('input:checked').val();
+						if(thisanswer == undefined){
+							results_answers.push("no answer");
+
+						}else{
+							results_answers.push(thisanswer);
+							
+						}
+						console.log(thisanswer)
+						
+						
+					});
+					
+					for ( var i = 0; i < cards.length; i++ ) {
+					  
+					    if(results_answers[i] === answer_key[i] ){
+					    	randome_i = Math.floor((Math.random() * 10))
+					    	feedback[i].innerHTML = correct_answer[(randome_i)] + randome_i; 
+					    	num_correct += 1;
+					    
+					    }else{
+					    	feedback[i].innerHTML = incorrect_answer[i]; 
+					    	
+					    }
+					    
+					};
+					$('.feedback').css("display","block");
+					$('#results_cont').css("display","block");
+					$('.start_over').css("display","block");
+					
+					switch(num_correct) {
+					    case 0:
+					        $('#results_cont').append(results_text[5]);
+					        break;
+					    case 1:
+					        $('#results_cont').append(results_text[4]);
+					        break;
+					    case 2:
+					        $('#results_cont').append(results_text[3]);
+					        break;
+					    case 3:
+					        $('#results_cont').append(results_text[2]);
+					        break;
+					    case 4:
+					        $('#results_cont').append(results_text[1]);
+					        break;
+					    case 5:
+					        $('#results_cont').append(results_text[0]);
+					        break;
+					    default:
+					        $('#results_cont').append(results_text[5]);
+					}
+					
+
+				}
+				
+			});
+
+		</script>
+    {% endif %}

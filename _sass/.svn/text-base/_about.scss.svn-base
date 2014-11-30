@@ -1,0 +1,14 @@
+#foundation_ribon{
+	position: relative;
+	top: -25px;
+}
+#spot_ribon{
+	position: relative;
+	top: -25px;
+}
+.video_quote{
+	margin-left:20px;
+	color:$brand-color;
+	font-family: 'carter_oneregular';
+	margin-left: 0px;
+}

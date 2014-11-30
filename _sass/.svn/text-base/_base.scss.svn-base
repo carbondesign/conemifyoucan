@@ -1,0 +1,135 @@
+
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/**
+ * Basic styling
+ */
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 300;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+
+
+/**
+ * Links
+ */
+a {
+    color: $brand-color;
+    text-decoration: none;
+
+    &:visited {
+        // color: darken($brand-color, 15%);
+    }
+
+    &:hover {
+        color: $brand-color;
+    }
+}
+
+
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.orange_border{
+    color: #f2f3b7;
+    border: solid 4px #cd820b;
+    background-color: #ec972a;
+    font-family: 'latobold';
+    font-size: .9em;
+    padding: 8px 20px 5px;
+    margin-top: 17px;
+    text-transform: uppercase;
+}
+.orange_border.num{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    padding: 2px 0px 0px 2px;
+    text-align: center;
+    margin: 0px;
+    line-height: 1.2em;
+}
+
+.container{
+    max-width: 980px;
+}
+
+footer{
+    background-color: #76b5b3;
+    font-size: .75em;
+    color:white;
+}
+footer a{color:white;}
+
+
+
+h2.ribbon_text{
+    color: #807a40;
+    position: absolute;
+    width: 97.25%;
+    text-transform: uppercase;
+    top: 27px;
+}
+
