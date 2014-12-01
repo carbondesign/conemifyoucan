@@ -24,7 +24,7 @@
                   {% assign current = 'current' %}
               {% endif %}
               <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last about_ribbon text-center{% endif %}{% if forloop.index == 3 %}quiz{% endif %}">
-                  <a href="{{ link.url }}">{{ link.title }}</a>
+                  <a href="{{ link.url  | prepend: site.baseurl }}">{{ link.title }}</a>
             {% endfor %}
         </ul>
       </div>
