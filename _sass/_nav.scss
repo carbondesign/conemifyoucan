@@ -28,7 +28,7 @@
         }
     }
 }
-header .container{
+header.site-header .container{
     @media screen and (min-width: $phone) and (max-width:$desk){
         max-width:100%;
         width:100%;

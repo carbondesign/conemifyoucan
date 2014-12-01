@@ -6,11 +6,8 @@
     }
 }
 
-
-
 form#quiz-form{
     padding:40px 0px;
-
     .quiz_card{
         background-color: #ebedca;
         -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
@@ -18,25 +15,37 @@ form#quiz-form{
         margin:0px auto 15px;
         padding:20px 40px;
         width: 820px;
+        @media screen and (max-width:$tab){
+            margin-top: $spacing-unit;
+        }
     
         .question{
-            margin-left:20px;
+            
             color:$brand-color;
             font-family: 'carter_oneregular';
-            margin-left: 0px;
+            @media screen and (min-width:$tab){
+                margin-left: $spacing-unit *2;
+            }
+            @media screen and (min-width:$desk){
+                margin-left: 0px;
+            }
         }
         .question span{
             margin-left:-.5em;
         }
 
         .answer{
-            margin-left: 40px;
+            @media screen and (min-width:$tab){
+                margin-left: $spacing-unit*3;
+            }
+            @media screen and (min-width:$desk){
+                margin-left: $spacing-unit*2;
+            }
         }
 
         input[type="radio"]{
             display:none;
-
-          }
+        }
         .radiogroup{
             display:block;
             margin-bottom: 5px;

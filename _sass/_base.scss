@@ -166,6 +166,13 @@ section{
     text-align: center;
     margin: 0px;
     line-height: 1.2em;
+    display: block;
+    float: left;
+    @media screen and (max-width:$tab){
+        position: absolute;
+        top: -35px;
+        left: 105px;
+    }
 }
 
 
