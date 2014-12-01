@@ -133,7 +133,8 @@ right: 21px;
 
 }
 .reel{
-    margin-top:30px;
+    margin:30px auto 0px;
+    display: block;
     max-width: 180%;
     @media screen and (min-width: $tab){max-width:102%}
     
