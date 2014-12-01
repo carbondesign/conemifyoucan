@@ -77,7 +77,7 @@
 							results_answers.push(thisanswer);
 							
 						}
-						console.log(thisanswer)
+						// console.log(thisanswer)
 						
 						
 					});
@@ -97,7 +97,8 @@
 					};
 					$('.feedback').css("display","block");
 					$('#results_cont').css("display","block");
-					$('.start_over').css("display","block");
+					$('#quiz_restart').css("display","block");
+					$('#quiz_submit').css("display","none");
 					
 					switch(num_correct) {
 					    case 0:

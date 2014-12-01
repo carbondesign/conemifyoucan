@@ -32,7 +32,7 @@ header.site-header .container{
     @media screen and (min-width: $phone) and (max-width:$desk){
         max-width:100%;
         width:100%;
-        padding: 0px;
+        padding: 0px $spacing-unit/2;
     }
 }
 .navbar-default .navbar-toggle,
@@ -119,8 +119,9 @@ header.site-header .container{
         padding: 0px 0px 0px 20px;
     }
 }
+.navbar-default .navbar-nav > li.last a{border-bottom:0px;}
 .navbar-default .navbar-nav > li.last a, .navbar-default .navbar-nav > li.quiz a{
-    border-bottom:0px;
+    
     &:after{
         content: "";  
     }

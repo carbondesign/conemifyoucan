@@ -150,11 +150,11 @@ section{
     padding: 8px 20px 5px;
     text-transform: uppercase;
     display: block;
-    margin: 17px auto 0px;
+    
 
     @media screen and (min-width: $tab){
         display: inline;
-        margin: inherit;
+       
         margin-top: 17px;
     }
 }

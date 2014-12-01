@@ -84,7 +84,12 @@ form#quiz-form{
         }
 
     }
-     #quiz_submit{width:200px;cursor: pointer}
+     #quiz_submit{
+        
+        cursor: pointer;
+        display: block;
+        
+    }
 
 }
-#results_cont{display: none}
+#results_cont,#quiz_restart{display: none}
