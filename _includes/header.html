@@ -4,7 +4,7 @@
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#conemifyoucan_nav">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -14,7 +14,7 @@
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="collapse navbar-collapse" id="conemifyoucan_nav">
         <ul class="nav navbar-nav ">
           
           {% for link in site.navigation %}
@@ -23,7 +23,7 @@
               {% if page.url contains link.url %}
                   {% assign current = 'current' %}
               {% endif %}
-              <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+              <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last about_ribbon text-center{% endif %}{% if forloop.index == 3 %}quiz{% endif %}">
                   <a href="{{ link.url }}">{{ link.title }}</a>
             {% endfor %}
         </ul>
@@ -34,3 +34,4 @@
   </nav>
 
 </header>
+

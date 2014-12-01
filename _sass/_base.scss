@@ -17,7 +17,9 @@ dl, dd, ol, ul, figure {
  */
 body {
     font-family: $base-font-family;
-    font-size: $base-font-size;
+    font-size: $small-font-size;
+    @media screen and (min-width: $tab){font-size:$base-font-size}
+    @media screen and (min-width: $desk){font-size:$base-font-size}
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
@@ -37,8 +39,6 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-
-
 /**
  * Images
  */
@@ -48,19 +48,29 @@ img {
 }
 
 
-
-
-
-
-
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
-
-
+h2 {
+    font-family: "yanone_kaffeesatzbold";
+    letter-spacing: .05em;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    @media screen and (min-width: $tab){
+       margin-bottom: $spacing-unit/2; 
+       font-size: 1.4em;
+    }
+    @media screen and (min-width: $desk){
+        font-size: 1.6em;
+    }
+}
+p{
+    font-size: .85em;
+}
 
 /**
  * Links
@@ -77,9 +87,48 @@ a {
         color: $brand-color;
     }
 }
+/*helper class*/
+.relative {position:relative;}
+.padding80{
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and (min-width: $tab){
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @media screen and (min-width: $desk){
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+.margin_t30{margin-top:$spacing-unit !important;}
+.margin_b15{margin-bottom:$spacing-unit/2 !important;}
 
+.main-content{
+    margin-top: -20px;  
+}
+.container{
+    max-width: 300px;
+    @media screen and (min-width: $tab){
+        max-width: 598px;
+    }
+    @media screen and (min-width: $desk){
+        max-width: 980px;
+    }
+}
+section{
+    padding:$spacing-unit 0px;
+    @media screen and (min-width: $desk){
+        padding:$spacing-unit 0px $spacing-unit*2;
+    }
+}
+.yellow{
+    background: url(../images/yellow.png) #fbfeca 0px 0px repeat;
 
-
+}
+.blue{
+    background: url(../images/blue.png) #fbfeca 0px 0px repeat;
+}
 /**
  * Clearfix
  */
@@ -99,8 +148,15 @@ a {
     font-family: 'latobold';
     font-size: .9em;
     padding: 8px 20px 5px;
-    margin-top: 17px;
     text-transform: uppercase;
+    display: block;
+    margin: 17px auto 0px;
+
+    @media screen and (min-width: $tab){
+        display: inline;
+        margin: inherit;
+        margin-top: 17px;
+    }
 }
 .orange_border.num{
     width: 35px;
@@ -112,14 +168,35 @@ a {
     line-height: 1.2em;
 }
 
-.container{
-    max-width: 980px;
-}
+
 
 footer{
     background-color: #76b5b3;
-    font-size: .75em;
+    font-size: .7em;
     color:white;
+    padding-bottom: $spacing-unit;
+    .copywrite{
+        @media screen and (min-width:$desk){
+            margin-top:-25px;
+        }
+    }
+    .privacy.contact{
+        text-transform: uppercase;
+        a{padding:0 5px; }
+        @media screen and (min-width:$tab){
+            float:right;
+        }
+        @media screen and (min-width:$desk){
+            margin-top: -($spacing-unit*2);
+        }
+    }
+    .footer_logo{
+        @media screen and (min-width:$desk){
+        float: none;
+        margin: 0px auto 0;
+        top: 30px;
+        }
+    }
 }
 footer a{color:white;}
 
@@ -132,4 +209,27 @@ h2.ribbon_text{
     text-transform: uppercase;
     top: 27px;
 }
+#ciyc_social{
+    width: 120px;
+    display: block;
+    margin: 7px auto 0px;
 
+    
+    span{
+        overflow: hidden;
+        margin-right:$spacing-unit/2;
+        border-radius:100%;
+        width: $spacing-unit;
+        height: $spacing-unit;
+        display: block;
+        float: left;
+        text-align: center;
+    }
+    span.last{
+        margin-right: 0px;
+    }
+}
+.fa{
+    color:#76b5b3;
+   
+}
