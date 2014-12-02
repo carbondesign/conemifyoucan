@@ -19,8 +19,10 @@
         margin: 30px 0px 5px;
         @media screen and (min-width: $tab)and (max-width: $desk){
             
-            margin: 0px 0px 0px 12.5%;
-            position:relative;
+            margin: 0px auto;
+            position: relative;
+            display: table;
+            float: none;
         }
         @media screen and (min-width: $desk){
             
@@ -32,7 +34,7 @@ header.site-header .container{
     @media screen and (min-width: $phone) and (max-width:$desk){
         max-width:100%;
         width:100%;
-        padding: 0px $spacing-unit/2;
+        padding: 0px;
     }
 }
 .navbar-default .navbar-toggle,
@@ -178,7 +180,5 @@ nav li.about_ribbon{
     .navbar-header{
         float:left;
     }
-    .col-xs-12{
-        width: 33.33333% !important;
-    }
+    
 }

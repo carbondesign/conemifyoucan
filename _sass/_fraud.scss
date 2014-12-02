@@ -75,7 +75,7 @@
 
     }
     .fraud_card{
-        @media screen and (max-width:$tab){
+        @media screen and (min-width:$phone) and (max-width:$desk){
             float: none !important;
         }
         position: relative
