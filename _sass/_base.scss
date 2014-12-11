@@ -65,11 +65,13 @@ h2 {
        font-size: 1.4em;
     }
     @media screen and (min-width: $desk){
-        font-size: 1.6em;
+        font-size: 1.5em;
     }
 }
 p{
     font-size: .85em;
+    @media screen and (min-width: $tab){}
+    @media screen and (min-width: $desk){}
 }
 
 /**
@@ -103,17 +105,18 @@ a {
 }
 .margin_t30{margin-top:$spacing-unit !important;}
 .margin_b15{margin-bottom:$spacing-unit/2 !important;}
+.margin_b30{margin-bottom:$spacing-unit !important;}
 
 .main-content{
     margin-top: -20px;  
 }
 .container{
-    max-width: 300px;
+    width: 300px;
     @media screen and (min-width: $tab){
-        max-width: 598px;
+       width: 598px;
     }
     @media screen and (min-width: $desk){
-        max-width: 980px;
+        width: 980px;
     }
 }
 section{
@@ -123,11 +126,13 @@ section{
     }
 }
 .yellow{
+    @media screen and (max-width: $tab){background-image: none;}
     background: url(../images/yellow.png) #fbfeca 0px 0px repeat;
 
 }
 .blue{
-    background: url(../images/blue.png) #fbfeca 0px 0px repeat;
+    @media screen and (max-width: $tab){background-image: none;}
+    background: url(../images/blue.png) #daf8f7 0px 0px repeat;
 }
 /**
  * Clearfix
@@ -216,6 +221,7 @@ h2.ribbon_text{
     text-transform: uppercase;
     top: 27px;
 }
+.blue h2.ribbon_text{color:$tealdark}
 #ciyc_social{
     width: 120px;
     display: block;

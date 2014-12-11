@@ -66,6 +66,7 @@ form#quiz-form{
             font-size: 15px;
             float: left;
             width: 24px;
+            @media screen and (max-width:$tab){margin-top: 2px;}
           
             }
         input[type="radio"]:checked + label::before{

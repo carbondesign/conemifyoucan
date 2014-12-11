@@ -1,64 +1,184 @@
 .navbar.navbar-default{
     background-color: #a8e2e9;
     background: url(../images/nav.png) repeat 0px 0px;
+
     border-radius: 0px;
     border: none;
-    min-height: 150px;
+    .navbar-header{
+        height: 75px;
+        @media screen and (min-width: $tab){
+           height: 150px; 
+        }
+    }
+    
+    
     .container{
         position:relative;
     }
     .navbar-nav{
-        margin-left: 210px;
+        margin: 30px 0px 5px;
+        @media screen and (min-width: $tab)and (max-width: $desk){
+            
+            margin: 0px auto;
+            position: relative;
+            display: table;
+            float: none;
+        }
+        @media screen and (min-width: $desk){
+            
+            margin: 0px -15px;
+        }
     }
 }
-
-
+header.site-header .container{
+    @media screen and (min-width: $phone) and (max-width:$desk){
+        max-width:100%;
+        width:100%;
+        padding: 0px;
+    }
+}
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus{
+    margin-top:20px;
+    margin-right: $spacing-unit;
+    background-color: transparent;
+    border: 0px;
+    .icon-bar{
+        background-color: $brand-color;
+        border: $brand-color solid 2px;
+        margin-bottom: -2px;
+    }
+}
+.navbar-default .navbar-collapse{
+    border:0px;
+    background-color:white;
+    
+    @media screen and (min-width: $tab) and (max-width: $desk){
+        margin-top: 130px;
+    }
+    @media screen and (min-width: $desk){
+        background-color:transparent;
+        margin-left: 230px;
+    }
+}
 .navbar-default .navbar-nav>li>a{
-    font-family: 'damionregular';
+    font-family: $base-font-family;
     color:#642220;
-    font-size: 1.4em;
-    padding: 60px 10px;
+    font-size: 1em;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom:1px solid #cecbcb;
+    @media screen and (min-width: $tab){
+        padding: 60px 10px;
+        border-bottom:0px;
+        font-family: 'damionregular';
+        text-transform: capitalize;
+        font-size: 1.4em;
+    }
 
     & :hover{
         color: $brand-color;
     };
 }
+
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{color: $brand-color;}
 .navbar-brand{
-    background: url(../images/logo.png) transparent no-repeat 0px 0px;
+    background: url(../images/mobile_logo.png) transparent no-repeat 0px 0px;
     overflow: hidden;
     text-indent: -1000px;
-    width: 240px;
-    height: 250px;
+    width: 167px;
+    height: 105px;
     position: absolute;
+    left: 50%;
+    top:-1px;
+    margin-left: -83px;
+    @media screen and (min-width: $tab) {
+        background: url(../images/tab_logo.png) rgba(0, 0, 0, 0) no-repeat 0px 0px;
+        left: 50%;
+        width: 180px;
+        height: 180px;
+        margin-left: -90px !important;
+    }
+    @media screen and (min-width: $desk){
+        background: url(../images/logo.png) transparent no-repeat 0px 0px;
+        left: 0px;
+        width: 240px;
+        height: 250px;
+        margin-left: 0px !important;
+    }
+
 
 }
 .navbar-default .navbar-nav > li.current > a{
     color: #0f7881;
 }
 .navbar-default .navbar-nav > li a:after{
-    content: "\2022";
-    color:#a7a000;
-    padding: 0px 0px 0px 20px;
+    @media screen and (min-width: $tab){
+        content: "\2022";
+        color:#a7a000;
+        padding: 0px 0px 0px 20px;
+    }
 }
-.navbar-default .navbar-nav > li.last a:after{
-    content: "";
+.navbar-default .navbar-nav > li.last a{border-bottom:0px;}
+.navbar-default .navbar-nav > li.last a, .navbar-default .navbar-nav > li.quiz a{
+    
+    &:after{
+        content: "";  
+    }
+    
 }
+
 nav li.about_ribbon{
-    background: url(../images/about.png) transparent no-repeat 0px 0px;
-    width: 110px;
-    height: 65px;
-    position: absolute;
-    right:0px;
+    @media screen and (min-width: $tab){
+        background: url(../images/about.png) transparent no-repeat 0px 0px;
+        width: 110px;
+        height: 65px;
+        position: absolute;
+        right:0px;
+    } 
+    @media screen and (min-width: $tab) and (max-width: $desk){
+        right: -15px;
+        top: -130px;
+    }  
     
 }
 .navbar-default .navbar-nav>li.about_ribbon>a{
-    font-family: 'latomedium';
-    font-size: .75em;
-    color:white;
-    text-shadow: 2px 2px #77909d;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: .1em;
-    padding-top: 20px;
+    @media screen and (min-width: $tab){
+        font-family: $base-font-family;
+        font-size: .75em;
+        color:white;
+        text-shadow: 2px 2px #77909d;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: .1em;
+        padding: 20px;
+    }
+
+}
+
+@media screen and (min-width: $tab) and (max-width: $desk){
+    .navbar-toggle {
+        display: none;
+    }
+    .collapse {
+    display: block;
+    visibility: visible;
+    }
+    .navbar-default .navbar-collapse{
+        background-color:white;
+    }
+    nav li{
+        display: inline;
+        float:left;
+
+    }
+    .navbar-default .navbar-nav > li > a{
+            padding-bottom: $spacing-unit;
+        }
+    .navbar-header{
+        float:left;
+    }
+    
 }

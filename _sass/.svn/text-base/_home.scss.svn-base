@@ -1,125 +1,180 @@
 
-
-
-
-
-h2 {
-    font-family: "yanone_kaffeesatzbold"
-}
-/*helper class*/
-.relative {position:relative;}
-.padding80{padding:0px 80px;}
-.margin_t30{margin-top:30px !important;}
-
-.main-content{
-    margin-top: -20px;  
-}
 #illustration{
-    background: url(../images/main-illustration.png) #6f7544 repeat-x 50% 0px;
-    min-height: 500px
+    
+    height: 0px;  
+    @media screen and (min-width: $tab){height: 275px; background: url(../images/main-illustration.png) $olive-color repeat-x 50% 0px;}
+    @media screen and (min-width: $desk){height: 500px}
+
+    
 }
 
-header .intro{
-    margin-top:510px;
-    padding: 30px 80px 40px;
-    color: white;
+section#home_intro {
+    background-color: $olive-color;
+    .intro{
+        margin-top:0px;
+        padding-top: 30px;
+        padding-bottom: 0px;
+        color: white;
+        
+        
+    }
 }
-section{
-    padding:25px 0px 55px;
+section#apps{
+    @media screen and (min-width: $tab) and (max-width: $desk){  
+        padding-top:0px;
+    }
 }
 
 section#apps .channel{
-    height: 200px;
+    
     overflow: hidden;
     text-indent: -1000px;
     margin-top: 20px;
     position: relative;
+    height: 145px;
+    
+   
+    @media screen and (min-width: $tab){
+        
+        height: 200px;
+        margin-top: 0px;
+    }
+    a{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        
+    }
 }
-section#apps .channel a{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-}
+
 section#apps #playnow{
-    background: url(../images/playnow.png) transparent 0px 0px no-repeat;
+    background: url(../images/playnow.png) transparent 50% 0px no-repeat;
+     background-size:70%;
+    @media screen and (min-width: $tab){ background-position: 0px;background-size:100%; }
+
 }
 section#apps #googleplay{
-    background: url(../images/googleplay.png) transparent 0px 0px no-repeat;
+    background: url(../images/googleplay.png) transparent 50% 0px no-repeat;
+     background-size:70%;
+    @media screen and (min-width: $tab){ background-position: 0px;background-size:100%; }
 }
 section#apps #appstore{
-    background: url(../images/appstore.png) transparent 0px 0px no-repeat;
+    background: url(../images/appstore.png) transparent 50% 0px no-repeat;
+     background-size:70%;
+    @media screen and (min-width: $tab){ background-position: 0px;background-size:100%; }
 }
 
 section#notsure{
-    background: url(../images/wood.png) #fbfeca 0px 0px repeat;
+    background: none;
+    background-color: #e1caaf;
+    @media screen and (min-width: $tab){ background: url(../images/wood.png) #e1caaf 0px 0px repeat; }
     
 }
 
 .trans_frame{
     position: absolute;
-    background-color: #e1bd93;
+    
     width: 100%;
     height: 100%;
     z-index: 0;
-    opacity: .7;
-    border: 8px solid #6e3d22;
+    
+    @media screen and (min-width: $tab){
+        background-color: #e1bd93;
+        border: 8px solid #6e3d22;
+        opacity: .7;
+
+    }
+    
 }
 .bolt_l, .bolt_r{
-    position: absolute;
-    top: 36%;
-    background: url("../images/bolts.png") 0px 0px transparent no-repeat;
-    height: 40px;
-    width: 40px;
-    left: 26px;
+    
+    @media screen and (min-width: $tab){
+        position: absolute;
+        top: 36%;
+        background: url("../images/bolts.png") 0px 0px transparent no-repeat;
+        height: 40px;
+        width: 40px;
+        left: 26px;
+    }
+
 }
 .bolt_r {
 left: auto;
 right: 21px;
 }
-.trans_frame_txt{padding:30px 80px 25px}
+.trans_frame_txt{
+    padding-left:0px;
+    padding-right:0px;
+    @media screen and (min-width: $tab){
+        padding-top:30px; 
+        padding-bottom:25px;
+        padding-left:80px;
+        padding-right:80px;
+
+    }
+}
 .vimeo_cont{
-    width:500px;
-    margin: 40px auto 0px;
+    
+    margin: 40px -15px 0px;
+    width:300px;
+    @media screen and (min-width: $tab){ 
+        width:540px; 
+        margin: 40px auto 0px;
+    }
 }
 
 .vimeo_cont iframe{
     -webkit-box-shadow: 0px 0px 20px 0px #222222;
     box-shadow: 0px 0px 20px 0px #222222;
+    width: 100%;
+
+
 }
 .reel{
-    margin-top:30px;
-    width:102%;
+    margin:30px auto 0px;
+    display: block;
+    max-width: 180%;
+    @media screen and (min-width: $tab){max-width:102%}
+    
 
     
 }
 .watchvideos{
     background-color: #ec972a;
     border: none;
-    margin-top: 60px;
+    margin-top: $spacing-unit;
     color: #fff;
     text-transform: uppercase;
     border-radius: 8px;
-    padding: 18px 15px 15px;
+    padding: 18px 15px ;
     font-family: 'latobold';
-    font-size: .9em;
     line-height: .8em;
+
+  -webkit-box-shadow: 0px 0px 4px 0px #666;
+          box-shadow: 0px 0px 4px 0px #666;
+
+    @media screen and (min-width: $tab){
+      margin-top: $spacing-unit *2;  
+    }
 } 
 
 
 
-.yellow{
-    background: url(../images/yellow.png) #fbfeca 0px 0px repeat;
 
+.character{
+    height:340px;
+    @media screen and (min-width: $tab){
+        height:460px;
+    }
+    @media screen and (min-width: $desk){
+        height:600px;
+    }
 }
-.blue{
-    background: url(../images/blue.png) #fbfeca 0px 0px repeat;
-}
-.character{height:600px;}
 .talkbubble, .talkbubble_shdw, .talkbubble_r, .talkbubble_shdw_r{
     position: relative;
-    padding: 15px;
+    padding: $spacing_unit/2 10px ;
     margin: 1em 0 3em;
     color: #fff;
     background-color: #f4e66a;
@@ -127,9 +182,16 @@ right: 21px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 15px;
-    height: 120px;
-    z-index: 1;
-    width:340px;
+    height: 100px;
+    z-index: 2;
+    width:270px;
+    @media screen and (min-width: $tab){
+        height:120px;
+    }
+    @media screen and (min-width: $desk){
+        width:340px;
+        height: 120px;
+    }
 }
 .talkbubble::after, .talkbubble_shdw::after{
     content: "";
@@ -158,17 +220,23 @@ right: 21px;
 .talkbubble_shdw, .talkbubble_shdw_r{
     background-color: #bcbdc0;
     position: absolute;
-    top: 10px;
+    
+    top: 6px;
+
     left: 9px;
     right: 15px;
-    z-index: 0;
+    z-index: 1;
     transform: rotate(358.5deg);
     -webkit-transform: rotate(358.5deg);
     -moz-transform: rotate(358.5deg);
     -o-transform: rotate(358.5deg);
     -ms-transform: rotate(358.5deg);
-    width: 304px;
-    height: 113px;
+   
+    height: 93px;
+    @media screen and (min-width: $tab){
+        top: 10px;
+        height: 113px;
+    }
 }
 .talkbubble_r{float:right;}
 .talkbubble_shdw_r{
@@ -196,51 +264,162 @@ right: 21px;
     right: 20px;
     left: auto;
 }
-.talkbubble .quote, .talkbubble_r .quote{font-family: 'carter_oneregular'; }
-.talkbubble .attribution, .talkbubble_r .attribution{font-family: 'latomedium'; }
+.talkbubble .quote, .talkbubble_r .quote{
+    font-family: 'carter_oneregular';
+    @media screen and (min-width: $tab){font-size:.9em }
+    @media screen and (min-width: $desk){font-size:1em }
+
+}
+.talkbubble .attribution, .talkbubble_r .attribution{
+    font-family: 'latomedium'; 
+
+}
 #targets img, #connor img, #fiona img, #catsby img{
     position: absolute;
-    z-index: 0;
+    z-index: 1;
+}
+#catsby{
+    margin: $spacing-unit 0 ;
 }
 #catsby .talkbubble, #catsby .talkbubble_shdw{
-    width: 430px;
-    height: 150px;
+    width: 270px;
+    height: 130px;
+    @media screen and (min-width: $tab){
+        width: 280px;
+        height: 170px;
+    }
+    @media screen and (min-width: $desk){
+        width: 430px;
+        height: 150px;
+    }
+}
+#catsby .talkbubble_shdw{
+    height: 124px;
+    @media screen and (min-width: $tab){height: 163px;}
+    @media screen and (min-width: $desk){height: 144px;}
 }
 #connor img{
 
-    top: 120px;
-    z-index: 3;
-    right:40px;
+    top: 100px;
+    z-index: 4;
+    width:80%;
+    
+    @media screen and (min-width: $tab){
+        right:0px;
+        top: 120px;
+        width:auto;
+    }
+    @media screen and (min-width: $desk){
+        right:40px;
+        
+    }
 }
 #fiona img{
-    top: 130px;
-    z-index: 3;
-    right: 76px;
+    top: 110px;
+    z-index: 4;
+    width:80%;
+    @media screen and (min-width: $tab){
+        top: 130px;
+        right: 30px;
+        width:90%;
+    }
+    @media screen and (min-width: $desk){
+        right: 76px;
+        width:auto;
+    }
 }
 #catsby img{
     top: 110px;
-    left: 70px;
+    width:80%;
+    z-index: 0;
+    @media screen and (min-width: $tab){
+       left: 0px;
+       top:140px;
+       width:auto;
+    }
+    @media screen and (min-width: $desk){
+       left: 70px;
+    }
 }
 .target_txt{
-    width: 260px;
-    z-index: 1;
+    width: 250px;
+    z-index: 2;
     position: absolute;
-    top: 145px;
-    font-size: .85em;
-    left: 55px;
-    line-height: 1.6em;
+    top: 150px;
+    left: $spacing-unit*1.2;
+    line-height: 1.4em;
+    @media screen and (min-width: $tab){
+        width: 240px;
+        left: 35px;
+        top: 175px;
+        
+        font-size: .85em;
+    }
+    @media screen and (min-width: $desk){
+        left: 50px;
+        top: 190px;
+        width: 280px;
+        font-size: 1em;
+    }
+
+    
 }
 .target_txt h3{
     color:#a11d26;
     font-family: 'latobold';
     text-transform: uppercase;
     font-size: 1em;
+    margin-bottom:$spacing-unit/3;
+    @media screen and (min-width: $tab){
+        margin-bottom: $spacing-unit/2;
+    }
+    
+}
+#targets{
+    background: url('../images/targets_sm.png') no-repeat 0px 0px transparent;
+    height:470px;
+    @media screen and (min-width: $tab){
+        height:550px;
+        background: url('../images/targets.png') no-repeat 0px 20px transparent;
+    }
+    @media screen and (min-width: $desk){
+        background: url('../images/targets_lg.png') no-repeat 0px 30px transparent;
+    }
+}
+#targets img{
+    max-width: 110%;
+    margin-left: -($spacing-unit);
+    @media screen and (min-width: $tab){
+        max-width: inherit;
+        margin-left: 0px;
+        top:25px;
+    }
 }
 
 
 
-#whatdidyoulearn .wdyl_txt{
-    padding-left:70px;
+#whatdidyoulearn {
+    img{
+        width: 30%;
+        margin: 0px auto $spacing-unit;
+        display: block;
+        @media screen and (min-width: $tab){
+            width:100%;
+            margin: 0px;
+        }
+    }
+    .wdyl_txt{
+        h2  {
+            text-align: center;
+            @media screen and (min-width: $tab){
+                text-align:left;
+            }
+        }
+        padding-left:inherits;
+        @media screen and (min-width: $desk){
+            padding-left:70px;
+        }
+    }
 }
 
 

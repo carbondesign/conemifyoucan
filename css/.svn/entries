@@ -1,15 +1,15 @@
 10
 
 dir
-80003
+80491
 http://k24456@subversion.finra.org/sharedservices/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/css
 http://k24456@subversion.finra.org/sharedservices
 
 
 
-2014-11-25T21:34:28.981268Z
-80003
-k24042
+2014-12-02T16:09:15.645112Z
+80463
+k24456
 
 
 
@@ -26,16 +26,50 @@ k24042
 
 746042f5-b841-cc1b-8fb2-f79a806a1eaa
 
+bootstrap.scss
+file
+
+
+
+
+2014-12-02T19:00:49.000000Z
+65080fa5c4a3a3e8afadc22f77362beb
+2014-12-02T16:09:15.645112Z
+80463
+k24456
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1393
+
 main.scss
 file
-80218
+80576
 
 
 
-2014-11-28T22:16:00.000000Z
-5804ba8b1a9b7479b1a07a23f9b41d99
-2014-11-28T22:23:59.357594Z
-80218
+2014-12-02T20:10:53.000000Z
+d85f7887603df180b4bcac8225bf3e0d
+2014-12-02T22:09:29.623045Z
+80576
 k24456
 
 
@@ -58,5 +92,5 @@ k24456
 
 
 
-3911
+4038
 

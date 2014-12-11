@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/sharedservices/!svn/ver/80003/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images
+/sharedservices/!svn/ver/80468/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images
 END
 appstore.png
 K 25
@@ -33,6 +33,18 @@ svn:wc:ra_dav:version-url
 V 92
 /sharedservices/!svn/ver/77070/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/googleplay.png
 END
+share.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/sharedservices/!svn/ver/80459/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/share.png
+END
+twitter.png
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/sharedservices/!svn/ver/80459/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/twitter.png
+END
 whatdidyoulearn.png
 K 25
 svn:wc:ra_dav:version-url
@@ -45,17 +57,29 @@ svn:wc:ra_dav:version-url
 V 87
 /sharedservices/!svn/ver/80003/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/plate.png
 END
+about_img.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/sharedservices/!svn/ver/77070/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/about_img.png
+END
 social.jpg
 K 25
 svn:wc:ra_dav:version-url
 V 88
 /sharedservices/!svn/ver/80003/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/social.jpg
 END
-about_img.png
+blue_long.png
 K 25
 svn:wc:ra_dav:version-url
 V 91
-/sharedservices/!svn/ver/77070/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/about_img.png
+/sharedservices/!svn/ver/80649/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/blue_long.png
+END
+targets_sm.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/sharedservices/!svn/ver/80468/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/targets_sm.png
 END
 yellow.png
 K 25
@@ -69,6 +93,12 @@ svn:wc:ra_dav:version-url
 V 85
 /sharedservices/!svn/ver/80003/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/hat.png
 END
+dollar.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/sharedservices/!svn/ver/80576/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/dollar.png
+END
 footer_logo.png
 K 25
 svn:wc:ra_dav:version-url
@@ -81,17 +111,41 @@ svn:wc:ra_dav:version-url
 V 93
 /sharedservices/!svn/ver/77070/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/quiz_ribbon.png
 END
-quiz_img.png
+people.png
 K 25
 svn:wc:ra_dav:version-url
-V 90
-/sharedservices/!svn/ver/77070/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/quiz_img.png
+V 88
+/sharedservices/!svn/ver/80576/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/people.png
 END
 nav.png
 K 25
 svn:wc:ra_dav:version-url
 V 85
 /sharedservices/!svn/ver/77070/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/nav.png
+END
+quiz_img.png
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/sharedservices/!svn/ver/77070/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/quiz_img.png
+END
+tab_logo.png
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/sharedservices/!svn/ver/80459/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/tab_logo.png
+END
+yellow_long.png
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/sharedservices/!svn/ver/80649/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/yellow_long.png
+END
+targets_lg.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/sharedservices/!svn/ver/80468/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/targets_lg.png
 END
 fiona.png
 K 25
@@ -117,6 +171,12 @@ svn:wc:ra_dav:version-url
 V 86
 /sharedservices/!svn/ver/77070/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/wood.png
 END
+facebook.png
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/sharedservices/!svn/ver/80459/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/facebook.png
+END
 riches.jpg
 K 25
 svn:wc:ra_dav:version-url
@@ -127,7 +187,7 @@ targets.png
 K 25
 svn:wc:ra_dav:version-url
 V 89
-/sharedservices/!svn/ver/80218/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/targets.png
+/sharedservices/!svn/ver/80468/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/targets.png
 END
 about.png
 K 25
@@ -159,17 +219,23 @@ svn:wc:ra_dav:version-url
 V 88
 /sharedservices/!svn/ver/77070/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/Catsby.png
 END
+reel.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/sharedservices/!svn/ver/77070/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/reel.png
+END
 blue.png
 K 25
 svn:wc:ra_dav:version-url
 V 86
 /sharedservices/!svn/ver/77070/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/blue.png
 END
-reel.png
+mobile_logo.png
 K 25
 svn:wc:ra_dav:version-url
-V 86
-/sharedservices/!svn/ver/77070/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/reel.png
+V 93
+/sharedservices/!svn/ver/80459/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/images/mobile_logo.png
 END
 reciprocity.jpg
 K 25

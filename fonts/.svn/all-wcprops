@@ -87,17 +87,17 @@ svn:wc:ra_dav:version-url
 V 98
 /sharedservices/!svn/ver/77070/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/fonts/carterone-webfont.eot
 END
-yanonekaffeesatz-bold-webfont.svg
-K 25
-svn:wc:ra_dav:version-url
-V 110
-/sharedservices/!svn/ver/77070/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/fonts/yanonekaffeesatz-bold-webfont.svg
-END
 lato-bold-webfont.ttf
 K 25
 svn:wc:ra_dav:version-url
 V 98
 /sharedservices/!svn/ver/77070/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/fonts/lato-bold-webfont.ttf
+END
+yanonekaffeesatz-bold-webfont.svg
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/sharedservices/!svn/ver/77070/FINRA.ORG.Apps/trunk/APPS/conemifyoucan/fonts/yanonekaffeesatz-bold-webfont.svg
 END
 yanonekaffeesatz-bold-webfont.woff
 K 25

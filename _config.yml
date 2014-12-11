@@ -5,8 +5,9 @@ description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "http://carbondesign.github.io/conemifyoucan/" # the subpath of your site, e.g. /blog/
-url: "http://carbondesign.github.io/conemifyoucan/" # the base hostname & protocol for your site
+# baseurl: "http://apps.dev.finra.org/conemifyoucan" # the subpath of your site, e.g. /blog/
+url: "http://localhost:4000" # the base hostname & protocol for your site
+# url: "http://apps.dev.finra.org/conemifyoucan" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -14,10 +15,10 @@ github_username:  jekyll
 markdown: kramdown
 navigation:
 - title: Fraud Tools
-  url: /fraud-tools/
+  url: /fraud-tools/index.html
 - title: Meet the Characters
   url: '/#characters'
 - title: Quiz
-  url: /quiz/
+  url: /quiz/index.html
 - title: About
-  url: /about/
+  url: /about/index.html

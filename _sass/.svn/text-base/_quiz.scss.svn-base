@@ -6,11 +6,8 @@
     }
 }
 
-
-
 form#quiz-form{
     padding:40px 0px;
-
     .quiz_card{
         background-color: #ebedca;
         -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
@@ -18,43 +15,58 @@ form#quiz-form{
         margin:0px auto 15px;
         padding:20px 40px;
         width: 820px;
+        @media screen and (max-width:$tab){
+            margin-top: $spacing-unit;
+        }
     
         .question{
-            margin-left:20px;
+            
             color:$brand-color;
             font-family: 'carter_oneregular';
-            margin-left: 0px;
+            @media screen and (min-width:$tab){
+                margin-left: $spacing-unit *2;
+            }
+            @media screen and (min-width:$desk){
+                margin-left: 0px;
+            }
         }
         .question span{
             margin-left:-.5em;
         }
 
         .answer{
-            margin-left: 40px;
+            @media screen and (min-width:$tab){
+                margin-left: $spacing-unit*3;
+            }
+            @media screen and (min-width:$desk){
+                margin-left: $spacing-unit*2;
+            }
         }
 
         input[type="radio"]{
             display:none;
-
-          }
+        }
         .radiogroup{
             display:block;
             margin-bottom: 5px;
          }
         input[type="radio"] + label{
             background: #e8eac8;
-            border: solid $brand-color 2px;
+            border: solid #653d22 2px;
             -webkit-appearance: none;
-            display: inline;
-            padding: 0px 10px;
+            display: block;
+            padding: 0px;
             border-radius: 100%;
             position: relative;
-            margin-top: 1px;
+            margin-top: 5px;
             margin-right: 12px;
             margin-left: 0;
             line-height: 0px;
-            height: 0px;
+            height: 24px;
             font-size: 15px;
+            float: left;
+            width: 24px;
+            @media screen and (max-width:$tab){margin-top: 2px;}
           
             }
         input[type="radio"]:checked + label::before{
@@ -75,7 +87,12 @@ form#quiz-form{
         }
 
     }
-     #quiz_submit{width:200px;cursor: pointer}
+     #quiz_submit{
+        
+        cursor: pointer;
+        display: block;
+        
+    }
 
 }
-#results_cont{display: none}
+#results_cont,#quiz_restart{display: none}

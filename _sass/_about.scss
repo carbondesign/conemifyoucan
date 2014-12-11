@@ -1,14 +1,193 @@
 #foundation_ribon{
 	position: relative;
-	top: -25px;
+	top: -30px;
 }
+h2.ribbon_text.spot_text {
+	width: 200px;
+	left: 50%;
+	margin-left: -100px;
+	top: -11px;
+	line-height: .9em;
+}
+h2.ribbon_text.foundation_text{top: 0px;}
 #spot_ribon{
 	position: relative;
-	top: -25px;
+	top: -30px;
 }
 .video_quote{
 	margin-left:20px;
 	color:$brand-color;
 	font-family: 'carter_oneregular';
 	margin-left: 0px;
+}
+iframe{
+	width:270px; 
+	height: 160px;
+	@media screen and (min-width: $tab){
+		width:590px; 
+		height: 330px;
+	}
+	@media screen and (min-width: $desk){
+		width:660px; 
+		height: 370px;
+	}
+}
+.teal_cont, .teal_shdw{
+	background: $tealmed;
+	padding: $spacing_unit $spacing_unit 20px;
+	@media screen and (min-width: $tab) {
+		padding: $spacing_unit $spacing_unit/2 10px;
+	}
+	@media screen and (min-width: $desk) {
+		width: 312px;
+		float: right;
+		padding: 40px $spacing_unit 20px;
+	}
+
+	z-index: 1;
+	img{
+		position: absolute;
+		top: -26px;
+		left: 50%;
+		margin-left: -27px;
+		max-width: 20%;
+		@media screen and (min-width: $tab) {
+			max-width: 25%;
+		}
+		@media screen and (min-width: $desk) {
+			top: -40px;
+		}
+		&#people{
+			margin-left: -130px;
+			top: -27px;
+			max-width: 97%;
+			margin-left: -130px;
+
+			@media screen and (min-width: $tab){
+				margin-left: -155px;
+				top: -24px;
+			}
+			@media screen and (min-width: $desk){
+				top: -29px;
+			}
+		}
+		
+	}
+	span{
+		text-transform: uppercase;
+		color: $teallight;
+		display: block;
+		line-height: 24px;
+		@media screen and (min-width: $desk) {
+			line-height: 28px;
+		}
+		&.invest{font-size: 1.07em;
+			@media screen and (min-width: $tab) {
+				font-size: $small-font-size; 
+			}
+			@media screen and (min-width: $desk) {
+				font-size: 1.15em; 
+			}
+		}
+		&.cost{font-size: 1.14em;
+			@media screen and (min-width: $tab) {
+				font-size:.94em
+			}
+			@media screen and (min-width: $desk) {
+				font-size: 1.25em; 
+			}
+		}
+
+		&.billion{color:$tealdark; display:block; font-family: $base-font-family-bold;
+			@media screen and (min-width: $tab) {
+				font-size:.8em
+			}
+			@media screen and (min-width: $desk) {
+				font-size: 1.1em; 
+			}
+		}
+
+		&.more{font-size: 1.3em;
+		 	@media screen and (min-width: $tab) {
+		 		font-size:1em;display: inline;
+		 		
+		 	}
+		 	@media screen and (min-width: $desk) {
+		 		font-size: 1.4em; 
+		 	}
+		}
+		&.people{font-size: 1.3em; color:$tealdark; font-family: $base-font-family-bold;
+			@media screen and (min-width: $tab) {
+				font-size:1em; display: inline;
+				font-size: 1em;
+			}
+			@media screen and (min-width: $desk) {
+				font-size: 1.5em; 
+			}
+		}
+		&.solicited{font-size: 1.3em; 
+			@media screen and (min-width: $tab) {
+				font-size:.8em; 
+				
+			}
+			@media screen and (min-width: $desk) {
+				font-size: 1.1em; 
+			}
+		}
+		&.offer{font-size: $small-font-size;
+			@media screen and (min-width: $desk) {
+				font-size: 1em; 
+			}
+
+		}
+		&.research{
+			text-transform:initial; font-size: ($small-font-size*.6); line-height: 1.2em;
+		}
+	}
+}
+
+.teal_shdw{
+	background-color: $tealdark;
+	position: absolute; 
+	top:10px;
+	left: 30px;
+	z-index: 0;
+	width: 88%;
+	height:100%;
+	@media screen and (min-width: $tab) {
+		left: 25px;
+		width: 220px;
+	}
+	@media screen and (min-width: $desk) {
+		width: 310px;
+		left: 92px;
+	}
+}
+.people_box{
+	padding-top: 22px;
+	@media screen and (min-width: $desk) {
+		float: right;
+		width: 450px;
+		margin-right: 66px;
+		padding-top: $spacing_unit;
+		padding-bottom: $spacing_unit/2;
+		
+	}
+	span{
+		@media screen and (min-width: $tab) {line-height: 1.2em;}
+		
+		
+	}
+
+}
+.people_box.teal_shdw{
+	@media screen and (min-width: $tab) {
+		width: 320px;
+	}
+	@media screen and (min-width: $desk) {
+		float: right;
+		width: 446px;
+		left: 55px;
+
+	}
 }

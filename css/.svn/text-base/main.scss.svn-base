@@ -68,9 +68,10 @@
 
 // Our variables
 $base-font-family: 'latomedium', Helvetica, Arial, sans-serif;
+$base-font-family-bold: 'latobold', Helvetica, Arial, sans-serif;
 $base-font-carterone: 'carter_oneregular', Helvetica, Arial, sans-serif;
 $base-font-size:   20px;
-$small-font-size:  $base-font-size * 0.875;
+$small-font-size:  $base-font-size * 0.85;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
@@ -79,18 +80,20 @@ $text-color:       #000;
 $background-color: #ffffff;
 $brand-color:      #653d22;
 
-$olive-color:       #828282;
+$olive-color:       #6f7544;
 $purple:            #662d91;
 $green:            #39b54a;
 $teal:            #009ba9;
 $peach:            #e96548;
 $orange:            #ec972a;
 
-$mobile:          300px;
+$phone:          300px;
 $tab:          600px;
-$desk:        1000x;
+$desk:        1000px;
 
-
+$tealmed: #32a4ae;
+$tealdark: #1c6c73;
+$teallight: #daf8f7;
 
 // Using media queries with like this:
 // @include media-query($palm) {

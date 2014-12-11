@@ -10,12 +10,17 @@
             background-color: $header_c;
             padding: $spacing_unit/2;
             padding-left: $pad_l;
-            
+            font-size:.85em;
             margin-bottom: 0px;
-            @media screen and (max-width:$tab){
-                font-size:.85em;
-                padding: $spacing_unit/3;
-                padding-left: 100px;
+            @media screen and (min-width:$tab){
+                font-size:.75em;
+                padding: $spacing_unit/3 0px;
+                padding-left: 90px;
+            }
+            @media screen and (min-width:$desk){
+                font-size:1.2em;
+                padding: $spacing_unit/3 0px;
+                padding-left: 120px;
             }
         }
         p.fraud_desc {
@@ -25,11 +30,16 @@
             margin-bottom: 0px;
             color: $text_color;
             min-height: 195px;
+            
+            @media screen and (min-width:$tab)and (max-width:$desk){min-height: 208px;font-size: .7em;}
         }
         a.fraud_btn {
             position: absolute;
             left: 50%;
             margin-left: -90px;
+            @media screen and (min-width:$tab){
+               margin-left: -99px; 
+            }
             bottom: -27px;
             background-color: $border_c;
             border: none;
@@ -54,10 +64,14 @@
 }
 #fraud-tools #fraud{margin-top:15px}
 .fraud_item{
-    padding: 0 25px;
+    padding:0px;
+    
     margin-bottom: 80px;
-    @media screen and (max-width:$tab){
-        padding:0px;
+    @media screen and (min-width:$tab){
+        padding: 0 10px;
+    }
+    @media screen and (min-width:$desk){
+        padding: 0 25px;
     }
 
 
@@ -65,18 +79,22 @@
         position: absolute;
         top: -($spacing_unit);
         left: 12px;
-        @media screen and (max-width:$tab){top: -($spacing_unit)/3*2;}
+        @media screen and (min-width:$tab){top: -($spacing_unit)/3*2; left: 8px;}
+        @media screen and (min-width:$desk){left: 12px;}
         img{
-            @media screen and (max-width:$tab){
-                width:70%;
-                height:70%;
+            width:70%;
+            height:70%;
+            
+            @media screen and (min-width:$desk){
+                width:90%;
+                height:90%;
             }
         }
 
     }
     .fraud_card{
         @media screen and (min-width:$phone) and (max-width:$desk){
-            float: none !important;
+            
         }
         position: relative
     }
